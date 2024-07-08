@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Management Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>Users</header>
+    <table class="table">
+      <thead class="thead">
+        <tr class="tr">
+          <th>UserName</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody class="tbody">
+        <% for(user of users) { %>
+        <tr class="tr">
+          <td class="td"><%= user.username %></td>
+          <td class="td"><%= user.first_name %></td>
+          <td class="td"><%= user.last_name %></td>
+          <td class="td"><%= user.role %></td>
+          <td class="td">
+            <div class="action-button-container">
+              <a href="/user/<%= user.id %>" class="action-button">View</a>
+              <a href="/user/<%= user.id %>/edit" class="action-button">Edit</a>
+              <a href="/user/<%= user.id %>/delete" class="action-button">Delete</a>
+            </div>
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <div class="page-button-container">
+      <% if (page > 1) { %>
+      <a
+        href="/users?page=<%= page - 1 %>&limit=<%= limit %>"
+        class="page-button"
+        >Previous</a
+      >
+      <% } %>
+      <a
+        href="/users?page=<%= page + 1 %>&limit=<%= limit %>"
+        class="page-button"
+        >Next</a
+      >
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Management Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+</style>   
+</head>
+
+<body>
+    <h1>User Details</h1>
+    <div class="user-container">
+        <p><b>FirstName</b>: <%= user.first_name %></p>
+        <p><b>LastName</b>: <%= user.last_name %></p>
+        <p><b>Role</b>: <%= user.role %></p>
+        <p><b>Email</b>: <%= user.email %></p>
+        <p><b>UserName</b>: <%= user.username %></p>
+        <p><b>UserID</b>: <%= user.id %></p>
+    </div>
+    <div class="back-btn">
+        <a href="/users">Back</a>
+    </div>
+</body>
+</html>

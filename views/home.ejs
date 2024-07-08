@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Mangement Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   <h1>Welcome!<%= user.first_name %></h1>
+
+
+   <div class="button-container">
+   <form action="/users">
+    <button class="users">Users on our system!</button>
+   </form>
+
+   <form action="/user/new">
+    <button class="newuser">Create new User</button>
+   </form>
+
+   <form action="/firms">
+    <button class="firms">Firms on our system!</button>
+   </form>
+
+   <form action="/count">
+    <button class="count">Count of users on our system</button>
+   </form>
+    <form action="/logout" method="post">
+     <button class="logout">Logout</button>
+    </form>
+    </div>
+</body>
+</html>

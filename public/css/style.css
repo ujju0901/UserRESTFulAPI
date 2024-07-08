@@ -1,0 +1,253 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+button {
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color:greenyellow;
+}
+.users {
+    background-color: rgb(0, 140, 255);
+}
+.newuser{
+    background-color: blueviolet;
+}
+.firms {
+    background-color: rgb(0, 255, 200);
+}
+.logout {
+    background-color: rgb(255, 0, 0);
+}
+
+.table {
+    width:100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+    font-size: 0.969em;
+    text-align: left;
+    font-family: Montserrat Regular;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.031em;
+    vertical-align: inherit;
+  }
+
+  .thead {
+    background-color: rgb(0, 140, 255);
+    color: white;
+  }
+  .tbody {
+    background-color: white;
+  }
+  .tr {
+    border: 1px solid black;
+    padding: auto;
+    margin: 100px 0;
+  }
+  .td {
+    border: 1px solid black;
+    padding: 8px;
+    margin: 100px 0;
+    color: black;
+    font-weight: 200;
+    font-size: medium;
+  }
+  .page-button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .page-button {
+    border: 2px solid black;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  .page-button a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action-button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .action-button{
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    text-decoration: none;
+  }
+  .action-button a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    color: black; 
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+    font-family: Montserrat Regular;
+    font-weight: 500;
+    font-size:larger;
+}
+
+body {
+    margin-top: 60px; 
+}
+
+.user-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  max-width: 600px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+b{
+  font-size: 25px;
+
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn a {
+  display: inline-block;
+  background-color: #534caf;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: large;
+}
+
+.back-btn a:hover {
+  background-color: #456fa0;
+}
+
+.update-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.update-btn{
+  width: 130px;
+  height: 55px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: large;
+  background-color: #534caf;
+}
+.update-btn:hover{
+  background-color: #456fa0;
+}
+
+.delete-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.delete-btn{
+  width: 130px;
+  height: 55px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: large;
+  background-color: #534caf;
+}
+.delete-btn:hover{
+  background-color: #456fa0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+label{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  margin-right: 380px;
+}
+.count-container{
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}

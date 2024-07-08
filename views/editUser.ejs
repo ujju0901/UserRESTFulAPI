@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Management Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>User Detail</h1>
+    <form action="/user/<%= user.id %>/update" method="post">
+      <input
+        type="text"
+        name="first_name"
+        value="<%= user.first_name %>"
+        placeholder="Enter your first name"
+      />
+      <input
+        type="text"
+        name="last_name"
+        value="<%= user.last_name %>"
+        placeholder="Enter your last name"
+      />
+      <input
+        type="text"
+        name="role"
+        value="<%= user.role %>"
+        placeholder="Enter your role"
+      />
+      <label for="password">
+        Enter your password to update your details
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          id="password"
+        />
+      </label>
+      <div class="update-btn-container">
+        <button type="submit" class="update-btn">Update</button>
+      </div>
+      <div class="back-btn">
+        <a href="/users">Back</a>
+      </div>
+    </form>
+  </body>
+</html>
